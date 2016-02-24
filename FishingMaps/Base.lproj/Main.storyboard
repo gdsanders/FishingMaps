@@ -64,11 +64,22 @@
                                 <rect key="frame" x="106" y="378" width="108" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Get my location"/>
+                                <connections>
+                                    <action selector="getLocation" destination="9pv-A4-QxB" eventType="touchUpInside" id="ZrW-Fa-MkS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tag" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="Aur-fF-k7W" id="65Y-AO-ime"/>
+                        <outlet property="getButton" destination="5n1-LH-zAc" id="MCc-KD-ffH"/>
+                        <outlet property="latitudeLabel" destination="hPK-jk-6yO" id="kfQ-T4-1EJ"/>
+                        <outlet property="longitudeLabel" destination="4CE-6Q-pjo" id="h36-cN-0s8"/>
+                        <outlet property="messageLabel" destination="KbP-VI-dxF" id="AcC-tb-EMZ"/>
+                        <outlet property="tagButton" destination="qvc-h7-qwI" id="ENa-gq-NHC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
