@@ -6,9 +6,10 @@
 //  Copyright © 2015 DigitalEquity, Inc. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 
-class CurrentLocationViewController: UIViewController {
+class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate {
     
     
     
