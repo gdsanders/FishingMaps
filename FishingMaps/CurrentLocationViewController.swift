@@ -22,6 +22,8 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     @IBAction func getLocation() {
         // do nothing yet
     }
+    
+let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
