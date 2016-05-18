@@ -40,6 +40,16 @@ let locationManager = CLLocationManager()
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - CLLocationManagerDelegate
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("didFailWithError \(error)")
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let newLocation = locations.last!
+        print("didUpdateLocations \(newLocation)")
+    }
+    
     
 
 
